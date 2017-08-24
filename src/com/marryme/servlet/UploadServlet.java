@@ -78,7 +78,7 @@ public class UploadServlet extends HttpServlet {
 					System.out.println(fileName);
 					// 该方法在某些平台(操作系统),会返回路径+文件名
 					fileName = fileName.substring(fileName.lastIndexOf("/") + 1);
-					File file = new File(path + "/" + fileName);
+					File file = new File(path + "\\" + fileName);
 					if (!file.exists()) {
 						item.write(file);
 					}
