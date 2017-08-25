@@ -85,7 +85,7 @@ public class RegitServlet extends HttpServlet {
 						user = userDao.findUserByNameAndPwd(user.getUserName(), user.getPassWord());
 						HttpSession session = request.getSession();
 						session.setAttribute("user", user);
-						request.getRequestDispatcher("index.jsp").forward(request, response);
+						request.getRequestDispatcher("IndexServlet").forward(request, response);
 					}
 				} else {
 					request.setAttribute("error", "验证码输入错误！！");

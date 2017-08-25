@@ -51,7 +51,7 @@ public class LoginServlet extends HttpServlet {
 				List<User> ul = userDao.findUsers(user.getId());
 				if (ul != null) {
 					request.setAttribute("users", ul);
-					request.getRequestDispatcher("index.jsp").forward(request,
+					request.getRequestDispatcher("IndexServlet").forward(request,
 							response);
 				}
 			} else {
