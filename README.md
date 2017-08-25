@@ -19,7 +19,7 @@
 1. JDK1.8
 2. Tomcat8.0
 3. MySQL5.x
-4. Eclipse
+4. Eclipse neno
 5. Web Project Settings  /
 6. servlet+jsp
 
