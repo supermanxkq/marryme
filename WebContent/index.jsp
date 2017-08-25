@@ -21,7 +21,7 @@
 
 </style>
 </HEAD>
-<body>
+<body style="background-color: #f1ecec;">
 	<div class="container">
 		<div class="row clearfix">
 			<div class="col-md-12 column">
@@ -128,7 +128,7 @@
 							<c:forEach var="u" items="${users}" varStatus="status">
 								<div class="col-md-4 item">
 									<div class="thumbnail">
-										<img alt="300x200" width="300px" height="200px"
+										<img alt="300x200" width="300px" height="200px" class="img-rounded"
 											src="${pageContext.request.contextPath }/upload/${u.headPic}" />
 										<div class="caption">
 											<h3>${u.name}</h3>

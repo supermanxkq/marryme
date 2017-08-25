@@ -18,7 +18,7 @@
 	src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 </HEAD>
-<body>
+<body style="background-color: #f1ecec;">
 	<div class="container">
 		<div class="row clearfix">
 			<div class="col-md-12 column">
@@ -77,7 +77,7 @@
 							<c:forEach var="u" items="${us}" varStatus="status">
 								<div class="col-md-4 item">
 									<div class="thumbnail">
-										<img alt="300x200"
+										<img alt="300x200" class="img-rounded"
 											src="${pageContext.request.contextPath }/upload/${u.headPic}" />
 										<div class="caption">
 											<h3>${u.name}</h3>

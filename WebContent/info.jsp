@@ -13,7 +13,7 @@
 <script type="text/javascript"
 	src="https://cdn.bootcss.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
 </HEAD>
-<BODY>
+<BODY style="background-color: #f1ecec;">
 	<div class="container">
 		<div class="row clearfix">
 			<div class="col-md-12 column">
