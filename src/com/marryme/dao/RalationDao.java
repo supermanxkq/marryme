@@ -18,8 +18,14 @@ public class RalationDao {
 		String sql = "delete from ralation where userId="+uid+  " and relateId="+rid+" and type=1";
 		PreparedStatement prep = connection.prepareStatement(sql);
 		prep.executeUpdate();
+		
+		connection = MysqlConn.getConn();
+		String sql2 = "delete from ralation where userId="+rid+  " and relateId="+uid+" and type=2";
+		PreparedStatement prep2 = connection.prepareStatement(sql2);
+		prep2.executeUpdate();
 		// 关闭流
 		prep.close();
+		prep2.close();
 		connection.close();
 	}
 

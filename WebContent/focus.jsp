@@ -14,6 +14,9 @@
 	src="https://cdn.bootcss.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
 	<script type="text/javascript"
 	src="${pageContext.request.contextPath }/js/focus.js"></script>
+	<script
+	src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 </HEAD>
 <body>
 	<div class="container">
@@ -72,9 +75,9 @@
 								我的关注
 							</h1>
 						</div>
-						<div class="row">
+						<div class="row masonry">
 							<c:forEach var="u" items="${users}" varStatus="status">
-								<div class="col-md-4">
+								<div class="col-md-4 item">
 									<div class="thumbnail">
 										<img alt="300x200"
 											src="${pageContext.request.contextPath }/upload/${u.headPic}" />
@@ -102,5 +105,12 @@
 			</div>
 		</div>
 	</div>
+		<script type="text/javascript">
+	$('.masonry').imagesLoaded(function() {
+		$('.masonry').masonry({
+		itemSelector: '.item'
+		});
+		});
+	</script>
 </body>
 </HTML>

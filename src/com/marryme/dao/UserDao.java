@@ -85,6 +85,7 @@ public class UserDao {
 			String job = rs.getObject("job").toString();
 			String name = rs.getObject("name").toString();
 			String sex = rs.getObject("sex").toString();
+			String edu = rs.getObject("edu").toString();
 			String headPic = rs.getObject("headPic").toString();
 			String phoneDB = "";
 			String addressDB = "";
@@ -100,6 +101,7 @@ public class UserDao {
 				user.setHobby(hobby);
 				user.setWeChat(weChat);
 				user.setSex(sex);
+				user.setEdu(edu);
 				user.setJob(job);
 				user.setAge(Integer.parseInt(age));
 				user.setDesc(desc);
@@ -116,6 +118,7 @@ public class UserDao {
 				user.setWeChat(weChat);
 				user.setSex(sex);
 				user.setJob(job);
+				user.setEdu(edu);
 				user.setAge(Integer.parseInt(age));
 				user.setDesc(desc);
 				user.setHeadPic(headPic);
